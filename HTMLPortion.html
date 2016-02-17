@@ -22,15 +22,18 @@
   <body class="oneColLiqCtr">
     <div id="container">
       <link rel="stylesheet" type="text/css" href="css/table_background.css">
+	  <!-- code for Flask
+	  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/table_background.css') }}">-->
       <div id="mainContent">
         <link rel="stylesheet" type="text/css" href="css/body_background.css">
+		<!-- code for Flask
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/body_background.css') }}">-->
         <table border="0" align="center">
           <tr>
             <td  colspan="2"><center><h1 style="font-family:Arial;font-size:48px">Lyrican</strong></h1>
             </td>
           </tr>
           <td>
-            <hr>
             <form action="." method="POST">
               <center style="font-family: Arial">
               Word <br><input type="text" name="search" maxlength="50" size="30" /><br>
@@ -50,7 +53,6 @@
               <center>
               <input type="submit" name="my-form" value="Search">
               </center>
-              <hr>
             </form>
           </td>
           </tr>
@@ -58,24 +60,14 @@
           <tr>
             <td>
               <center>
-              <p style="font-family: Arial">{{w1}}<br>
-              {{w2}}<br>
-              {{w3}}<br>
-              {{w4}}<br>
-              {{w5}}<br>
-              {{w6}}<br>
-              {{w7}}<br>
-              {{w8}}<br>
-              {{w9}}<br>
-              {{w10}}</p>
+              <p style="font-family: Arial">{{out|safe}}<br></p>
               </center>
             </td>
           </tr>
           <tr>
             <td  colspan="2"><center><h2 style="font-family:Arial">About Lyrican</strong></h1>
-            <hr>
             <p>Lyrican is a project created during Code Day Chicago 2016. Its goal is to analyze lyrics. For each musician, it finds a list of words unique to them. You may also search for a specific word, for a specific musician, and get the number of times they have said that word in a song. You may download our database (stored as a Python 2.7 pickle file) <a href="http://bit.ly/1WkFNQH">here</a>.</p>
-			<h3 style="font-family:Arial">How-to</strong></h1> <hr> <p>To find how many times an artist has said a word, fill in the artist and word boxes with the appropriate information. To find out an artist's top words, enter their name (leaving word blank), and choose the algorithm for finding top words. To find, on average, per artist, how much a word is said, enter that word (leaving name blank).</p>
+			<h3 style="font-family:Arial">How-to</strong></h1> <p>To find how many times an artist has said a word, fill in the artist and word boxes with the appropriate information. To find out an artist's top words, enter their name (leaving word blank), and choose the algorithm for finding top words. To find, on average, per artist, how much a word is said, enter that word (leaving name blank).</p>
             </td>
           </tr>
           <td>
