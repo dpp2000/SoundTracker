@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	
+
+    <title>Lyrican | Lyrics Analytics Engine</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Lyrican</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">How-to</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Lyrican Search</h1>
+					<form action="." method="POST">
+					<div class="dropdown" align="left">
+					  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-cog"></i></button>
+					  <span class="caret"></span></button>
+					  <ul class="dropdown-menu">
+						<li>Word Ranking Algorithm</li>
+				        <li><input type="radio" name="prop" value="pop">Popularity<br></li>
+				        <li><input type="radio" name="prop" value="uni" checked="checked">Uniqueness</input></li>
+					  </ul>
+					</div>
+	                <center style="font-family: Arial">
+	                Word <br><input type="text" name="search" maxlength="50" size="30" /><br>
+	                </center>
+	                <br>
+	                <center style="font-family: Arial">
+	                Artist <br><input type="text" name="author" maxlength="50" size="30" /><br>
+					<input type="submit" name="my-form" value="Search">
+				</center>
+				</form>
+                <center>
+                <p style="font-family: Arial">{{w1}}<br>
+                {{w2}}<br>
+                {{w3}}<br>
+                {{w4}}<br>
+                {{w5}}<br>
+                {{w6}}<br>
+                {{w7}}<br>
+                {{w8}}<br>
+                {{w9}}<br>
+                {{w10}}</p>
+                </center>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>About</h1>
+					<p>Lyrican is a project created during Code Day Chicago 2016. Its goal is to analyze lyrics. For each musician, it finds a list of words unique to them. You may also search for a specific word, for a specific musician, and get the number of times they have said that word in a song. You may download our database (stored as a Python 2.7 pickle file) <a href="http://bit.ly/1WkFNQH">here</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>How-to</h1>
+					<p>To find how many times an artist has said a word, fill in the artist and word boxes with the appropriate information. To find out an artist's top words, enter their name (leaving word blank), and choose the algorithm for finding top words. To find, on average, per artist, how much a word is said, enter that word (leaving name blank).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
