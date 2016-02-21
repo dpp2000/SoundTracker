@@ -11,8 +11,8 @@
       </script>
       <style type="text/css">
       .form-style-8{
-          font-family: 'Open Sans Condensed', arial, sans;
-          width: 80%;
+          font-family: 'Futura', arial, sans;
+          width: 60%;
           padding: 10%;
           background: #FFFFFF;
           margin: 50px auto;
@@ -24,7 +24,7 @@
       .form-style-8 h2{
           background: #4D4D4D;
           text-transform: uppercase;
-          font-family: 'Open Sans Condensed', sans-serif;
+          font-family: 'Futura', sans-serif;
           color: #797979;
           font-size: 18px;
           font-weight: 100;
@@ -104,33 +104,31 @@
   </head>
   <body class="oneColLiqCtr">
     <div id="container">
-	  <!-- code for Flask
-      <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/table_background.css') }}">-->
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/table_background.css') }}">
       <link rel="stylesheet" type="text/css" href="css/table_background.css">
       <div id="mainContent">
-		<!-- code NOT for Flask
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/body_background.css') }}">-->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/body_background.css') }}">
         <link rel="stylesheet" type="text/css" href="css/body_background.css">
         <table border="0" align="center">
           <tr>
-            <td  colspan="2"><center><h1 style="font-family:Arial;font-size:48px">Lyrican</strong></h1>
+            <td  colspan="2"><center><h1 style="font-family:Futura;font-size:48px">Lyrican</strong></h1>
             </td>
           </tr>
           <td>
             <div class="form-style-8">
             <form action="." method="POST">
-              <center style="font-family: Arial">
+              <center style="font-family: Futura">
               Word <br><input type="text" name="search" maxlength="50" size="30" /><br>
               </center>
               <br>
-              <center style="font-family: Arial">
+              <center style="font-family: Futura">
               Artist <br><input type="text" name="author" maxlength="50" size="30" /><br><br>
               </center>
-              <center style="font-family: Arial">
+              <center style="font-family: Futura">
               Number of words <br><input type="text" name="n" maxlength="50" size="30" /><br>
               </center>
               <br>
-        <center style="font-family: Arial">
+        <center style="font-family: Futura">
       Search by
       <br>
         <input type="radio" name="prop" value="pop">Popularity<br>
@@ -141,7 +139,7 @@
               <input type="submit" name="my-form" value="Search">
               </center>
               <center>
-              <p style="font-family: Arial">{{out|safe}}<br></p>
+              <p style="font-family: Futura">{{out|safe}}<br></p>
               </center>
             </form>
           </td>
@@ -149,9 +147,9 @@
           </tr>
         </div>
           <tr>
-            <td  colspan="2"><center><h2 style="font-family:Arial">About Lyrican</strong></h1>
-            <p>Lyrican is a project created during Code Day Chicago 2016. Its goal is to analyze lyrics. For each musician, it finds a list of words unique to them. You may also search for a specific word, for a specific musician, and get the number of times they have said that word in a song. You may download our database (stored as a Python 2.7 pickle file) <a href="http://bit.ly/1WkFNQH">here</a>.</p>
-			<h3 style="font-family:Arial">How-to</strong></h1> <p>To find how many times an artist has said a word, fill in the artist and word boxes with the appropriate information. To find out an artist's top words, enter their name (leaving word blank), and choose the algorithm for finding top words. Set number of words to the number of words that you wish to retrieve. To find, on average, per artist, how much a word is said, enter that word (leaving name blank).</p>
+            <td  colspan="2"><center><h2 style="font-family:Futura">About Lyrican</strong></h1>
+            <p style="font-family:Futura">Lyrican is a project created during Code Day Chicago 2016. Its goal is to analyze lyrics. For each musician, it finds a list of words unique to them. You may also search for a specific word, for a specific musician, and get the number of times they have said that word in a song. You may download our database (stored as a Python 2.7 pickle file) <a href="http://bit.ly/1WkFNQH">here</a>.</p>
+			<h3 style="font-family:Futura">How-to</strong></h1> <p style="font-family:Futura">To find how many times an artist has said a word, fill in the artist and word boxes with the appropriate information. To find out an artist's top words, enter their name (leaving word blank), and choose the algorithm for finding top words. Set number of words to the number of words that you wish to retrieve. To find, on average, per artist, how much a word is said, enter that word (leaving name blank).</p>
             </td>
           </tr>
           <td>
