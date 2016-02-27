@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+      <style type="text/css">
+      input.middle:focus {
+          outline-width: 0;
+      }
+      *:focus {
+          outline: none;
+      }
+      </style>
+  </head>
+  <body style="background-color:black">
+      <div class="name">
+      <form action="." method="post">
+        <label for="search" style="color:white">></label>
+        <input type="text" style="border:0px; background-color:black; color:white; font-size:1em" name="search" size="30">
+        <input type="submit" name="my-form" value="Run" id="search" style="height: 0px; width: 0px; border: none; padding: 0px;">
+        <p style="font-family: Futura; color:white">{{out|safe}}</p>
+      </form>
+      </div>
+  </body>
+</html>
