@@ -14,7 +14,7 @@
       <div class="name">
       <form action="." method="post">
         <label for="search" style="color:white">></label>
-        <input type="text" style="border:0px; background-color:black; color:white; font-size:1em" name="search" size="30">
+        <input type="text" style="border:0px; background-color:black; color:white; font-size:1em" name="search" size="30" autofocus>
         <input type="submit" name="my-form" value="Run" id="search" style="height: 0px; width: 0px; border: none; padding: 0px;">
         <p style="font-family: Futura; color:white">{{out|safe}}</p>
       </form>
@@ -23,7 +23,16 @@
 
     <div style="position: absolute; bottom: 5px; background-color: black">
     <hr>
-    <p style="font-family: Futura; color:white"> Commands: <br> 'timesSaid artist word': returns the number of times artist has said word.<br>  'topN number artist score=standard': Returns the top number words from artist. Uses the standard scoring metric. One may specify the metric as pop or uni, times used and uniqueness, respectively.<br> 'avgNumber word':Find the average number of times a word has been said, across all artists.</p>
+    <p style="font-family: Futura; color:white">timesSaid artist word:<br>
+                    returns the number of times artist has said word.<br>
+                    topN artist number=10 score=uni:<br>
+                    Returns the top number words from artist. One may specify the metric as pop or uni, times used and uniqueness, respectively.<br>
+                    avgNumber word:<br>
+                    Find the average number of times a word has been said, across all artists.<br>
+                    diff artist1 artist2:<br>
+                    Returns the difference between two artists.<br>
+                    sim artist1 n=10:<br>
+                    Returns n artists similar (using diff) to artist1.</p>
     </div>
 </div>
 </body>
